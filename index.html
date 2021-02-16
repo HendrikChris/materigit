@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script type="text/javascript">
+    function myFunction() {
+        var d1 = new Date(document.getElementById('tanggal').value);
+        var d2 = new Date()
+        var t2 = d2.getTime();
+        var t1 = d1.getTime();
+
+        document.getElementById('tampil').innerHTML = parseInt((t2-t1)/(24*3600*1000))
+    }
+  </script>
+</head>
+<body>
+  <p>Hendrik Cristanto - C14180140</p>
+  <input type="date" id="tanggal">
+  <input type="button" value="Button 1" id="button1" onclick="myFunction() ">
+  <p id="tampil"></p>
+</body>
+</html>
