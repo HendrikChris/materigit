@@ -2,6 +2,7 @@
 <html>
 <head>
   <title></title>
+<<<<<<< HEAD
 </head>
 <body>
   <p>Hendrik Cristanto - C14180140</p>
@@ -15,5 +16,33 @@
     <li>git clone</li>
     <li>git fetch</li>
   </ol>
+=======
+  <script type="text/javascript">
+    function myFunction() {
+        var d1 = new Date(document.getElementById('tanggal').value);
+        var d2 = new Date()
+        var t2 = d2.getTime();
+        var t1 = d1.getTime();
+
+        document.getElementById('tampil').innerHTML = parseInt((t2-t1)/(24*3600*1000))
+    }
+    function myFunction2() {
+        var d1 = new Date(document.getElementById('tanggal').value);
+        var d2 = new Date(document.getElementById('tanggal2').value);
+        var t2 = d2.getTime();
+        var t1 = d1.getTime();
+
+        document.getElementById('tampil').innerHTML = parseInt((t2-t1)/(24*3600*1000))
+    }
+  </script>
+</head>
+<body>
+  <p>Hendrik Cristanto - C14180140</p>
+  <input type="date" id="tanggal">
+  <input type="button" value="Button 1" id="button1" onclick="myFunction() ">
+  <input type="date" id="tanggal2">
+  <input type="button" value="Button 2" id="button2" onclick="myFunction2() ">
+  <p id="tampil"></p>
+>>>>>>> C14180140_E
 </body>
 </html>
